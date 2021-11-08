@@ -1,0 +1,16 @@
+<div class="dashboard-parent">
+  <header class="header">
+    <button (click)="onButtonClick()" class="button">Dashboard</button>
+    <kendo-textbox [(ngModel)]="searchText" placeholder="First Name" type="text">
+      <ng-template kendoTextBoxSuffixTemplate>
+        <kendo-textbox-separator></kendo-textbox-separator>
+        <kendo-icon name="search"></kendo-icon>
+      </ng-template>
+    </kendo-textbox>
+    <div class="flex-stretch"></div>
+    <app-additional-loan-info></app-additional-loan-info>
+  </header>
+  <div class="dashboard-body">
+    <app-loan-details></app-loan-details>
+  </div>
+</div>

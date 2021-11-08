@@ -1,20 +1,13 @@
 import { Component } from '@angular/core';
-import {
-    FormGroup,
-    FormBuilder,
-    FormControl
-} from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
-    selector: 'my-app',
-   templateUrl: 'app.component.html'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    public form: FormGroup;
-
-    constructor(private formBuilder: FormBuilder) {
-        this.form = new FormGroup({
-            textbox: new FormControl()
-         });
-    }
+  title = 'KendoUI';
+  constructor(private formBuilder: FormBuilder) {
+}
 }

@@ -1,0 +1,30 @@
+.dashboard-parent {
+    padding: 2rem;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 0.5rem;
+            background-color: transparent;
+            margin-right: 1rem;
+        }
+
+        .flex-stretch {
+            flex: 1;
+        }
+
+        app-additional-loan-info {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            padding-bottom: 1rem;
+
+        }
+    }
+}
